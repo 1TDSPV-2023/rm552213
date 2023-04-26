@@ -21,6 +21,9 @@
     </header>
 
     <h2 class="tit-sec">Seção Foto</h2>
+<div>
+    <button onclick="alert(this)">CLICK</button>
+</div>
  
     <section class="conteudo">
         <div>
@@ -78,6 +81,31 @@
         </div>
 
     </footer>
+
+    <script>
+        //comentario de linha 
+        /*
+        *Comentario de bloco
+        */$
+        //Declaracao de variaveis com a palavra reservada var
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //Saida de dados com console.log()
+        console.log(nr1);
+        console.log(nr2);
+
+        const botoes = document.querySelectorAli("button");
+
+        botoes.forEach((botao)=>{
+
+            if (botao.textContent == "CLICK"){
+                botao.addEventListener("click",()=>{
+                    alert("oi!");
+                })
+            }
+        });
+    </script>
 
 </body>
 
